@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExpenseFlow | Transactions</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header class="header">
+<div class="brand"><div class="brand-icon"><i class="fa-solid fa-wallet"></i></div><div><h2>ExpenseFlow</h2><span>Daily Expense Tracker</span></div></div>
+<nav>
+<a class="" href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+<a class="active" href="transactions.html"><i class="fa-solid fa-receipt"></i> Transactions</a>
+<a class="" href="summary.html"><i class="fa-solid fa-calendar-days"></i> Summary</a>
+</nav>
+</header>
+<main>
+
+<section class="page-title"><span class="eyebrow">TRANSACTION MANAGEMENT</span><h1>Transaction History</h1><p>Search, filter, review and delete your financial records.</p></section>
+<section class="panel">
+<div class="toolbar"><div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="searchInput" placeholder="Search description or category"></div><select id="filterType"><option value="all">All Types</option><option value="income">Income</option><option value="expense">Expense</option></select><select id="filterCategory"><option value="all">All Categories</option><option>Food</option><option>Transport</option><option>Shopping</option><option>Bills</option><option>Education</option><option>Entertainment</option><option>Health</option><option>Salary</option><option>Business</option><option>Investment</option><option>Gift</option><option>Other</option></select><button id="exportBtn" class="secondary-btn"><i class="fa-solid fa-file-csv"></i> Export CSV</button></div>
+<div class="table-wrap"><table><thead><tr><th>Description</th><th>Category</th><th>Date</th><th>Type</th><th>Amount</th><th>Action</th></tr></thead><tbody id="transactionList"></tbody></table><div id="emptyMessage" class="empty-message"><i class="fa-solid fa-receipt"></i><h3>No transactions found</h3><p>Add transactions from the dashboard.</p></div></div>
+</section>
+<section class="stats-grid mini"><div class="stat-card"><small>Income Records</small><h2 id="incomeCount">0</h2></div><div class="stat-card"><small>Expense Records</small><h2 id="expenseCount">0</h2></div><div class="stat-card"><small>Total Records</small><h2 id="transactionCount">0</h2></div></section>
+
+</main>
+<footer><div><i class="fa-solid fa-wallet"></i><strong> ExpenseFlow</strong></div><p>Track smarter. Spend wiser.</p><span>© 2026 ExpenseFlow</span></footer>
+<script src="script.js"></script>
+</body>
+</html>

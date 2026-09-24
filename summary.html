@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExpenseFlow | Summary</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header class="header">
+<div class="brand"><div class="brand-icon"><i class="fa-solid fa-wallet"></i></div><div><h2>ExpenseFlow</h2><span>Daily Expense Tracker</span></div></div>
+<nav>
+<a class="" href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+<a class="" href="transactions.html"><i class="fa-solid fa-receipt"></i> Transactions</a>
+<a class="active" href="summary.html"><i class="fa-solid fa-calendar-days"></i> Summary</a>
+</nav>
+</header>
+<main>
+
+<section class="page-title"><span class="eyebrow">FINANCIAL INSIGHTS</span><h1>Monthly Summary</h1><p>Review income, expenses, balance and budget usage by month.</p></section>
+<section class="panel month-panel"><label>Select Month</label><div class="month-control"><i class="fa-regular fa-calendar"></i><input type="month" id="monthFilter"></div></section>
+<section class="stats-grid"><div class="stat-card income-card"><small>Monthly Income</small><h2 id="monthlyIncome">₹0.00</h2></div><div class="stat-card expense-card"><small>Monthly Expenses</small><h2 id="monthlyExpense">₹0.00</h2></div><div class="stat-card balance-card"><small>Monthly Balance</small><h2 id="monthlyBalance">₹0.00</h2></div></section>
+<section class="summary-grid">
+<div class="panel"><div class="panel-heading"><div><h2>Expense Usage</h2><p>Monthly spending against budget</p></div><i class="fa-solid fa-chart-column"></i></div><div class="big-progress"><div id="summaryProgress"></div></div><div class="progress-label"><span id="summaryPercent">0%</span><strong id="summaryBudgetText">₹0 / ₹0</strong></div><p id="summaryStatus" class="status-text">Set a budget from the dashboard.</p></div>
+<div class="panel"><div class="panel-heading"><div><h2>Category Breakdown</h2><p>Where your money is going</p></div><i class="fa-solid fa-chart-pie"></i></div><div id="categoryBreakdown" class="category-list"></div></div>
+</section>
+
+</main>
+<footer><div><i class="fa-solid fa-wallet"></i><strong> ExpenseFlow</strong></div><p>Track smarter. Spend wiser.</p><span>© 2026 ExpenseFlow</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
